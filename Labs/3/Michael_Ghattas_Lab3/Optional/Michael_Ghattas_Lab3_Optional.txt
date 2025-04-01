@@ -1,0 +1,10 @@
+Michael Ghattas
+COMP 4581 - Lab 3
+Jan/27/2025
+
+
+Effectiveness for Finding Large Primes: The Sieve of Eratosthenes is effective for finding all primes up to a given n. However, it is not ideal for generating a single large prime number due to the following reasons:
+
+	Memory Usage -> The sieve requires an array of size n, which can consume significant memory for very large n. For example, finding primes up to $10^{12}$ would require an array of size $10^{12}$, which is impractical.
+
+	Computational Overhead -> To find a single large prime for RSA, the sieve is inefficient because it generates all primes up to n, even though only one is required.

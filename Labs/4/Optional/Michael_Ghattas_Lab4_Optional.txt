@@ -1,0 +1,51 @@
+##
+# Michael Ghattas
+# COMP 4581 - Lab 4
+# Feb/03/2025
+##
+
+
+
+DAC Approach for Closest Pair in 2D
+
+Brute Force Complexity
+Checking all pairs of points in 2D takes O(n^2).
+
+
+Divide-and-Conquer Approach
+
+Divide:
+Split the points into left and right halves based on the x-coordinates.
+
+Conquer:
+Recursively find the closest pair in each half.
+
+Combine:
+Consider cross-boundary pairs that lie within the minimum distance found in the two halves.
+This step ensures that points near the partition line are checked efficiently.
+
+
+Improved Complexity
+
+Sorting the points: O(nlogn)
+Recursive calls: O(n)
+Total complexity: O(nlogn) -> Faster than brute-force 
+
+
+Scalability
+
+Sorting once at the start improves efficiency.
+Recursive pruning reduces unnecessary comparisons.
+
+
+Conclusion
+
+On a circle, sorting + modular arithmetic gives an O(nlogn) approach.
+In 2D, a Divide-and-Conquer method reduces complexity from O(n^2) to O(nlogn), making it scalable for large datasets.
+
+
+
+##
+# Note:
+# Research, refinement, and completion of the answer was assisted by GenAI/LLMs.
+##

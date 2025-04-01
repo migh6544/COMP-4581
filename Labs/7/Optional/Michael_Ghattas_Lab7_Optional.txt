@@ -1,0 +1,34 @@
+1. Problems That Do Not Lend Themselves to Greedy Approaches.
+
+Greedy algorithms make locally optimal choices at each step with the hope that they lead to a globally optimal solution.
+However, there are many problems where greedy approaches fail to find the optimal solution. Here are some notable examples:
+
+
+Knapsack Problem
+
+    - Problem: Given a set of items, each with a weight and a value, determine the most valuable subset that fits within a given weight limit.
+    - Why Greedy Fails: A greedy approach might pick the item with the highest value-to-weight ratio first, but this can lead to a suboptimal selection that leaves valuable combinations unused.
+    - Optimal Solution: Dynamic programming or branch and bound.
+
+
+Traveling Salesperson Problem
+
+    - Problem: Find the shortest possible route that visits each city exactly once and returns to the starting city.
+    - Why Greedy Fails: A greedy algorithm that picks the nearest unvisited city at each step may result in a path that forces inefficient detours later.
+    - Optimal Solution: Dynamic programming (Held-Karp algorithm) or approximation algorithms for large instances.
+
+
+Graph Coloring Problem
+
+    - Problem: Assign colors to graph vertices such that no two adjacent vertices share the same color, using the minimum number of colors.
+    - Why Greedy Fails: A greedy approach that colors each vertex with the smallest available color can sometimes produce suboptimal solutions.
+    - Optimal Solution: Backtracking, branch and bound, or heuristic approaches.
+
+
+
+2. Why Would We Want a Greedy Algorithm?
+
+    - Speed and Simplicity: Greedy algorithms are generally easy to implement and run quickly.
+    - Optimality in Special Cases: Some problems, such as Dijkstra’s Algorithm for shortest paths in non-negative weighted graphs, are solved optimally using a greedy approach.
+    - Approximation Solutions: Even when greedy doesn’t give an optimal solution, it often provides good approximations in polynomial time.
+    - Works Well for Real-Time Decision Making: In scenarios where real-time processing is needed (e.g., job scheduling, network routing), greedy heuristics are practical and effective.
